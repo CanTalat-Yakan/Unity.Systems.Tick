@@ -11,13 +11,13 @@ namespace UnityEssentials
     /// <remarks>The <see cref="TickUpdate"/> class allows developers to hook into the Unity game loop by
     /// subscribing to the <see cref="OnTick"/> event. This event is triggered every frame during the <see
     /// cref="UnityEngine.PlayerLoop.Update"/> phase, passing the time elapsed since the last frame.</remarks>
-    public static partial class TickUpdate
+    public static partial class Tick
     {
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public static void Initialize() =>
-            PlayerLoopHook.Add<Update>(Tick);
+            PlayerLoopHook.Add<Update>(TickUpdate);
 
-        private static void Tick()
+        private static void TickUpdate()
         {
             Update(Time.deltaTime);
 
@@ -27,14 +27,14 @@ namespace UnityEssentials
 
         public static void Clear()
         {
-            PlayerLoopHook.Remove<Update>(Tick);
+            PlayerLoopHook.Remove<Update>(TickUpdate);
 
             s_tickGroups.Clear();
             s_groupsToRemove.Clear();
         }
     }
 
-    public static partial class TickUpdate
+    public static partial class Tick
     {
         /// <summary>
         /// Represents a group of actions that are executed at a specified tick rate,

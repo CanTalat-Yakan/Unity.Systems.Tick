@@ -1,10 +1,10 @@
 {
-    "name": "UnityEssentials.UnityTickUpdate.Tests",
+    "name": "UnityEssentials.Tick.Tests",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "UnityEssentials.TickUpdate",
+        "UnityEssentials.Tick",
         "UnityEssentials.PlayerLoopHook"
     ],
     "includePlatforms": [],

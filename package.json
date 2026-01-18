@@ -1,7 +1,7 @@
 {
-  "name": "com.unityessentials.tickupdate",
+  "name": "com.unityessentials.tick",
   "version": "1.0.0",
-  "displayName": "Unity Systems TickUpdate",
+  "displayName": "Unity Systems Tick",
   "description": "This is a part of the UnityEssentials Ecosystem",
   "unity": "6000.0",
   "unityRelease": "",
