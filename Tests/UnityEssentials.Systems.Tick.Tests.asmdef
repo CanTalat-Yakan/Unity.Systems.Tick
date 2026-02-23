@@ -1,11 +1,11 @@
 {
-    "name": "UnityEssentials.Tick.Tests",
+    "name": "UnityEssentials.Systems.Tick.Tests",
     "rootNamespace": "",
     "references": [
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner",
-        "UnityEssentials.Tick",
-        "UnityEssentials.PlayerLoopHook"
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:0fa8651d0b88ef34ca92b90242219007",
+        "GUID:cd0c86d488f143b4c8b7c930d24f2695"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
